@@ -4,6 +4,6 @@ namespace PointOfSale.DataAccess.Data
 {
     public interface ISqlDataAccess
     {
-        Task SaveData(string storedProcedure, DynamicParameters data, string connectionStringName = "Default");
+        Task SaveDataAsync(string storedProcedure, DynamicParameters data, string connectionStringName = "Default");
     }
 }

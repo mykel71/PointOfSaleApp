@@ -4,7 +4,7 @@ using System.Data;
 
 namespace PointOfSale.DataAccess.Data;
 
-public class CustomerData
+public class CustomerData : ICustomerData
 {
     private readonly ISqlDataAccess _sql;
     public CustomerData(ISqlDataAccess sql)
@@ -12,7 +12,7 @@ public class CustomerData
         _sql = sql;
     }
 
-    public async Task InsertPurchase(CustomerPurchaseModel data)
+    public async Task InsertPurchaseAsync(CustomerPurchaseModel data)
     {
         DynamicParameters p = new();
         p.Add("@CustomerId", dbType: DbType.Int32, direction: ParameterDirection.Output);
@@ -20,7 +20,7 @@ public class CustomerData
         p.Add("@LastName", data.LastName);
         p.Add("@Email", data.Email);
 
-        await _sql.SaveData("dbo.spCustomer_Upsert", p);
+        await _sql.SaveDataAsync("dbo.spCustomer_Upsert", p);
 
         int customerId = p.Get<int>("@CustomerId");
 
@@ -29,6 +29,6 @@ public class CustomerData
         p.Add("Cost", data.Cost);
         p.Add("@CustomerId", customerId);
 
-        await _sql.SaveData("dbo.spPurchase_Insert", p);
+        await _sql.SaveDataAsync("dbo.spPurchase_Insert", p);
     }
 }

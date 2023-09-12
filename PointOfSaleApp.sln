@@ -7,6 +7,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PointOfSaleDb", "PointOfSal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSale.DataAccess", "PointOfSale.DataAccess\PointOfSale.DataAccess.csproj", "{53488AD6-F44D-482B-A6BD-AA4C150F59CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSale.Api", "PointOfSale.Api\PointOfSale.Api.csproj", "{29930755-B262-44EA-9E50-95B74BCC77F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{53488AD6-F44D-482B-A6BD-AA4C150F59CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53488AD6-F44D-482B-A6BD-AA4C150F59CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53488AD6-F44D-482B-A6BD-AA4C150F59CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29930755-B262-44EA-9E50-95B74BCC77F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29930755-B262-44EA-9E50-95B74BCC77F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29930755-B262-44EA-9E50-95B74BCC77F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29930755-B262-44EA-9E50-95B74BCC77F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

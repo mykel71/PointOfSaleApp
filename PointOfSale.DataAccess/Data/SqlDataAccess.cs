@@ -12,12 +12,13 @@ public class SqlDataAccess : ISqlDataAccess
         _config = config;
     }
 
-    public Task SaveData(string storedProcedure,
+    public async Task SaveDataAsync(string storedProcedure,
                             DynamicParameters data,
                             string connectionStringName = "Default")
     {
         using var connection = new SqlConnection(_config.GetConnectionString(connectionStringName));
-        return connection.ExecuteAsync(storedProcedure,
+        
+        await connection.ExecuteAsync(storedProcedure,
                                        data,
                                        commandType: System.Data.CommandType.StoredProcedure);
     }
