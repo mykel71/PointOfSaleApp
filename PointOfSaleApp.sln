@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34004.107
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PointOfSaleDb", "PointOfSaleDb\PointOfSaleDb.sqlproj", "{5F4DFB61-722B-4607-936B-F0E0DCBCD1F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointOfSale.DataAccess", "PointOfSale.DataAccess\PointOfSale.DataAccess.csproj", "{53488AD6-F44D-482B-A6BD-AA4C150F59CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{5F4DFB61-722B-4607-936B-F0E0DCBCD1F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F4DFB61-722B-4607-936B-F0E0DCBCD1F9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5F4DFB61-722B-4607-936B-F0E0DCBCD1F9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{53488AD6-F44D-482B-A6BD-AA4C150F59CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53488AD6-F44D-482B-A6BD-AA4C150F59CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53488AD6-F44D-482B-A6BD-AA4C150F59CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53488AD6-F44D-482B-A6BD-AA4C150F59CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
